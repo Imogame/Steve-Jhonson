@@ -3,37 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Stone Chatbot - Steve Johnson</title>
+    <title>子ども英会話教室イングリッシュストーン - スティーブ・ジョンソン</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right bottom, #e0f7fa, #bbdefb); /* Soft gradient background */
+            color: #2c3e50; /* Dark blue text */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+            text-align: center;
+            max-width: 1000px; /* Increased width to prevent cutoff */
+            width: 100%;
+            border: 1px solid #e0e0e0; /* Subtle border */
+            word-wrap: break-word; /* Ensure long words/phrases break */
+            overflow-wrap: break-word; /* Modern equivalent */
         }
         h1 {
-            color: #2c3e50;
+            font-size: 2.5rem; /* Slightly smaller heading */
+            font-weight: 700; /* Bolder */
+            color: #1a237e; /* Even darker blue for heading */
+            margin-bottom: 25px;
+            line-height: 1.2;
         }
         p {
-            margin-bottom: 10px;
+            font-size: 1rem; /* Slightly smaller paragraph text */
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #34495e; /* Slightly lighter body text */
         }
-        .info-box {
-            background-color: #e9f7ef;
-            border: 1px solid #d0f0d0;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 30px;
+        strong {
+            color: #0d47a1; /* Accent color for strong text */
+        }
+        /* Ensure the chatbot button (if it's part of the widget) also looks good */
+        .voiceflow-chat-button {
+            border-radius: 9999px; /* Fully rounded for the button */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to English Stone!</h1>
-    <p>This page features our AI EFL teacher, **Steve Johnson**, designed for beginner adult classes.</p>
-    <p>Steve's knowledge base includes our textbook syllabus, ready to help students with conversational English and lesson-related queries.</p>
-    <p>You should see Steve's chatbot widget appear in the bottom right corner (or where configured). Click on it to start your conversation!</p>
-
-    <div class="info-box">
-        <p><strong>Note for developers:</strong> The Voiceflow widget script below initializes the chat interface. You can adjust the `projectID` and `versionID` as needed for your Voiceflow project.</p>
+    <div class="container">
+        <h1>子ども英会話教室イングリッシュストーンへようこそ！</h1>
+        <p>こちらは、初心者向け大人クラスのAI英会話講師、**スティーブ・ジョンソン**のページです。</p>
+        <p>スティーブの知識ベースには、教科書のシラバスが含まれており、生徒さんの英会話練習やレッスンに関する質問にお答えします。</p>
+        <p>チャットボットウィジェットが右下（または設定された場所）に表示されますので、クリックして会話を始めましょう！</p>
     </div>
 
     <!-- Voiceflow Chat Widget Script for Steve Johnson -->
