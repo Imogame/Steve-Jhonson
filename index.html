@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Stone Chatbot - Steve Johnson</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .info-box {
+            background-color: #e9f7ef;
+            border: 1px solid #d0f0d0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to English Stone!</h1>
+    <p>This page features our AI EFL teacher, **Steve Johnson**, designed for beginner adult classes.</p>
+    <p>Steve's knowledge base includes our textbook syllabus, ready to help students with conversational English and lesson-related queries.</p>
+    <p>You should see Steve's chatbot widget appear in the bottom right corner (or where configured). Click on it to start your conversation!</p>
+
+    <div class="info-box">
+        <p><strong>Note for developers:</strong> The Voiceflow widget script below initializes the chat interface. You can adjust the `projectID` and `versionID` as needed for your Voiceflow project.</p>
+    </div>
+
+    <!-- Voiceflow Chat Widget Script for Steve Johnson -->
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '6876e20f9d77340f59814fed' }, // Steve's project ID
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production', // Use 'production' for live versions, or specific version IDs for testing
+                    voice: {
+                        url: "https://runtime-api.voiceflow.com" // Voiceflow runtime API URL
+                    }
+                });
+            };
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; // Source for the Voiceflow widget bundle
+            v.type = "text/javascript";
+            s.parentNode.insertBefore(v, s); // Insert the script into the document
+        })(document, 'script');
+    </script>
+</body>
+</html>
